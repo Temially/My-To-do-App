@@ -1,0 +1,145 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+    border-radius: 40px 0px 40px 0px;
+    margin-top: 15px;
+  }
+
+  body{
+      background-image: url('img/luke-chesser-eICUFSeirc0-unsplash.jpg');
+      background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  /*div styling*/
+
+  .shape{
+    width: 60%;
+    height: 50%;
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+    -o-perspective: 900px;
+    -webkit-perspective: 900px;
+    -ms-perspective: 900px;
+    perspective: 900px;
+    margin: 0 auto;
+    margin-top: 0px;
+  }
+
+   
+  /* Top styling*/
+  .top {
+    background-color: #008080 !important;
+    padding: 30px 40px;
+    color: white !important;
+    text-align: center;
+  }
+
+   
+  /* Styling the input tag */
+  input {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    width: 75%;
+    float: left;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #ffc0cb !important;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* making the items selectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+ 
+
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd !important;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888 !important;
+    color: #fff !important;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #008080 !important;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  .li:hover{
+      color: #008080 !important;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: plum !important;
+    color: white !important;
+  }
+ 
+  
+  /* Clear floats after the header */
+  .top:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: plum !important;
+    color: #555 !important;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    margin-top: 0px;   
+  }
+  
+  .addBtn:hover {
+    background-color: plum !important;
+    color: blanchedalmond !important;
+  }
